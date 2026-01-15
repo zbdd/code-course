@@ -15,7 +15,7 @@ Each completed lesson is a small, self-contained Node + TypeScript setup.
 ```bash
 cd lesson-001/completed
 npm install
-node --import tsx main.ts
+npm start
 ```
 
 Repeat the same steps in `lesson-002/completed/`.
