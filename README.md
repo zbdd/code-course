@@ -34,3 +34,7 @@ Repeat the same steps in `lesson-002/completed/`.
 ## Need Help?
 
 If you are stuck, re-read the current lesson guide and compare your work to the `completed/` folder for that lesson.
+
+## Git Setup
+
+If you want to download the lessons with Git, see `docs/git-setup.md`.

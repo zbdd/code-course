@@ -343,6 +343,16 @@ runStep("Remove missing booking", () => {
 });
 ```
 
+### Quick Note: Union Types
+
+In TypeScript, a **union type** describes a value that can be one of several types. You will see this idea when handling errors, since a caught error can be multiple specific types.
+
+```ts
+type BookingError = BookingValidationError | BookingNotFoundError;
+```
+
+We use `instanceof` checks in `runStep()` to narrow the error to one specific type before handling it.
+
 ---
 
 ## What Just Happened
