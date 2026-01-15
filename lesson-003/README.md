@@ -209,7 +209,8 @@ Create a new file called `bookingStore.ts`.
 Add the following code:
 
 ```ts
-import { Booking, BookingRequest, createBooking } from "./booking.js";
+import { createBooking } from "./booking.js";
+import type { Booking, BookingRequest } from "./booking.js";
 import { BookingNotFoundError } from "./bookingErrors.js";
 
 export function addBooking(
@@ -234,6 +235,8 @@ export function listBookings(bookings: Booking[]): Booking[] {
   return bookings;
 }
 ```
+
+**Note:** With `verbatimModuleSyntax` enabled, import types using `import type` to avoid compile errors.
 
 ### What we added
 
@@ -266,7 +269,7 @@ We will:
 Open `main.ts` and replace its contents with the following, **reading each section carefully**.
 
 ```ts
-import { BookingRequest } from "./booking.js";
+import type { BookingRequest } from "./booking.js";
 import { addBooking, removeBooking, listBookings } from "./bookingStore.js";
 import {
   BookingNotFoundError,

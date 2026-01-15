@@ -137,6 +137,8 @@ console.log(isValidBooking(valid));   // true
 console.log(isValidBooking(invalid)); // false
 ```
 
+**Note:** With `verbatimModuleSyntax` enabled, import types using `import type` (for example, `import type { BookingRequest } from "./booking.js";`).
+
 ### Running the Script
 
 In your terminal, run:

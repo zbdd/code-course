@@ -163,12 +163,8 @@ This provides an alternative action if the condition is false.
 ### Update `main.ts`
 
 ```typescript
-import {
-    isValidBooking,
-    getBookingDuration,
-    isLongBooking,
-    type BookingRequest
-} from "./booking.js";
+import { isValidBooking, getBookingDuration, isLongBooking } from "./booking.js";
+import type { BookingRequest } from "./booking.js";
 
 // Create multiple bookings
 const bookings: BookingRequest[] = [
@@ -194,6 +190,8 @@ for (const booking of bookings) {
     }
 }
 ```
+
+**Note:** With `verbatimModuleSyntax` enabled, import types using `import type` to avoid compile errors.
 
 ### Run It
 

@@ -1,9 +1,5 @@
-import {
-    isValidBooking,
-    getBookingDuration,
-    isLongBooking,
-    type BookingRequest
-} from "./booking.js";
+import { isValidBooking, getBookingDuration, isLongBooking } from "./booking.js";
+import type { BookingRequest } from "./booking.js";
 
 // Create multiple bookings
 const bookings: BookingRequest[] = [

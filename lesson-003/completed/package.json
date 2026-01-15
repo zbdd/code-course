@@ -1,9 +1,10 @@
 {
-  "name": "lesson-02",
+  "name": "lesson-03",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node --import tsx main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
