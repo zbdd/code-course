@@ -7,3 +7,4 @@ dist/
 *.tsbuildinfo
 coverage/
 npm-debug.log*
+AGENTS.md
