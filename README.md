@@ -7,6 +7,7 @@ Welcome! This repository contains a set of step-by-step TypeScript lessons. Each
 1. Read the lesson guide in `lesson-001/README.md`.
 2. Run the completed code in `lesson-001/completed/` to see the output.
 3. Continue to `lesson-002/README.md` and `lesson-003/README.md`.
+4. Continue to `lesson-004/README.md`.
 
 ## Running a Lesson
 
@@ -18,12 +19,12 @@ npm install
 npm start
 ```
 
-Repeat the same steps in `lesson-002/completed/`.
+Repeat the same steps in `lesson-002/completed/`, `lesson-003/completed/`, and `lesson-004/completed/`.
 
 ## Repository Layout
 
-- `lesson-001/`, `lesson-002/`, `lesson-003/`: Lesson guides (`README.md`).
-- `lesson-001/completed/`, `lesson-002/completed/`: Runnable code for the lesson.
+- `lesson-001/`, `lesson-002/`, `lesson-003/`, `lesson-004/`: Lesson guides (`README.md`).
+- `lesson-001/completed/`, `lesson-002/completed/`, `lesson-003/completed/`, `lesson-004/completed/`: Runnable code for the lesson.
 - `docs/`: Supplemental lesson notes.
 
 ## Prerequisites

@@ -2,6 +2,7 @@ import type { Booking, BookingRequest } from "./booking.js";
 import { addBooking, removeBooking, listBookings } from "./bookingStore.js";
 import {
     BookingNotFoundError,
+    BookingOverlapError,
     BookingValidationError
 } from "./bookingErrors.js";
 
@@ -26,6 +27,10 @@ function runStep(label: string, fn: () => void) {
     } catch (err) {
         if (err instanceof BookingValidationError) {
             console.log(`Validation error: ${err.message}`);
+            return;
+        }
+        if (err instanceof BookingOverlapError) {
+            console.log(`Overlap error: ${err.message}`);
             return;
         }
         if (err instanceof BookingNotFoundError) {
@@ -55,6 +60,30 @@ runStep("Add invalid booking", () => {
         start: 14,
         end: 11,
         roomNumber: 2
+    };
+
+    bookings = addBooking(bookings, request, generateId);
+    printBookings();
+});
+
+runStep("Add back-to-back booking (allowed)", () => {
+    const request: BookingRequest = {
+        customerName: "Frank",
+        start: 12,
+        end: 13,
+        roomNumber: 1
+    };
+
+    bookings = addBooking(bookings, request, generateId);
+    printBookings();
+});
+
+runStep("Add overlapping booking (blocked)", () => {
+    const request: BookingRequest = {
+        customerName: "Eve",
+        start: 11,
+        end: 13,
+        roomNumber: 1
     };
 
     bookings = addBooking(bookings, request, generateId);
