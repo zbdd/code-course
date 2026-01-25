@@ -297,6 +297,48 @@ Back-to-back bookings should be allowed, so the overlap check should use:
 
 ---
 
+# Expected Output
+
+When you run `npm start` from the `lesson-004/completed/` folder, you should see:
+
+```
+=== Add valid booking ===
+
+Current bookings:
+- id=1 name=Alice room=1 start=10 end=12
+
+=== Add invalid booking ===
+Validation error: Start time must be before end time
+
+=== Add back-to-back booking (allowed) ===
+
+Current bookings:
+- id=1 name=Alice room=1 start=10 end=12
+- id=2 name=Frank room=1 start=12 end=13
+
+=== Add overlapping booking (blocked) ===
+Overlap error: Room 1 overlaps with booking 1
+
+=== Remove existing booking ===
+
+Current bookings:
+- id=2 name=Frank room=1 start=12 end=13
+
+=== Remove missing booking ===
+Not found error: No booking found with id: 999
+```
+
+**What this demonstrates:**
+
+1. **Valid booking** — Alice's booking (10–12, room 1) is accepted
+2. **Invalid booking** — Bob's booking is rejected because end time (11) is before start time (14)
+3. **Back-to-back booking** — Frank's booking (12–13, room 1) is allowed because it starts exactly when Alice's ends
+4. **Overlapping booking** — Eve's booking (11–13, room 1) is blocked because it overlaps with Alice's (10–12)
+5. **Remove existing** — Alice's booking (id=1) is removed successfully
+6. **Remove missing** — Attempting to remove id=999 throws a not-found error
+
+---
+
 # Exercises
 
 1. **Availability check:** Write a function `isRoomAvailable()` that returns `true` or `false` instead of throwing.
