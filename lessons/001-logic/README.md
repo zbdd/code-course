@@ -25,11 +25,11 @@ The `let` keyword is used to declare a variable, and the `: number` part specifi
 Data types define the kind of data a variable can hold. Common data types include:
 - `number`: for numeric values (e.g., `10`, `3.14`)
 - `string`: for text (e.g., `"Hello, World!"`)
-- `boolean`: for true/false values (e.g., `true`, `false`
+- `boolean`: for true/false values (e.g., `true`, `false`)
 - `array`: for lists of values (e.g., `[1, 2, 3]`)
 - `object`: for more complex data structures (e.g., `{ type: 'box', color: 'red' }`)
 
-In Typescript, it is good practice to specify the data type of variable when you declare it.
+In TypeScript, it is good practice to specify the data type of variable when you declare it.
 
 However, TypeScript can often infer the type based on the value you assign to the variable.
 
