@@ -1,4 +1,4 @@
-## Coding logic
+# Coding logic
 
 At its heart, programming is about logic. You are telling the computer what to do, how to do it and when to do it.
 
@@ -6,7 +6,7 @@ Each programming language has its own syntax (the way you write things) but the 
 
 This lesson is all about the basic building blocks of programming logic.
 
-### Variables
+## Variables
 
 Variables are like containers that hold information. You can think of them as labelled boxes where you can store data.
 
@@ -20,7 +20,7 @@ In this example, `count` is a variable that holds the number `10`.
 
 The `let` keyword is used to declare a variable, and the `: number` part specifies that this variable will hold a number.
 
-### Data Types
+## Data Types
 
 Data types define the kind of data a variable can hold. Common data types include:
 - `number`: for numeric values (e.g., `10`, `3.14`)
@@ -39,9 +39,9 @@ let count = 10;
 
 So even without explicitly stating `: number`, TypeScript understands that `count` is a number.
 
-#### Practice
+### Practice
 
-Try write out the following variables with their types:
+Try to write out the following variables with their types:
 - A variable called `username` that holds a string value of your name.
 - A variable called `isLoggedIn` that holds a boolean value indicating if a user is logged in.
 - A variable called `scores` that holds an array of numbers representing game scores.
@@ -61,14 +61,14 @@ let car: { make: string; model: string; year: number } = { make: "Toyota", model
 
 Now you know how to declare variables, its time to do something with them!
 
-### Operations
+## Operations
 
 Operations are actions that you can perform on variables and values. Common operations include:
 - Arithmetic operations: `+`, `-`, `*`, `/`
 - Comparison operations: `===`, `!=`, `<`, `>`, `<=`, `>=`
 - Logical operations: `&&` (AND), `||` (OR), `!` (NOT)
 
-#### Arithmetic Operations
+### Arithmetic Operations
 
 Arithmetic operations are used to perform mathematical calculations.
 
@@ -91,7 +91,7 @@ What would be the value of `a`, `b`, and `c`?
 
 </details>
 
-#### Comparison Operations
+### Comparison Operations
 
 Comparison operations are used to compare two values.
 
@@ -118,7 +118,7 @@ What would be the value of `a`, `b`, `c` and `d`?
 
 </details>
 
-#### Logical Operations
+### Logical Operations
 
 Logical operations are used to combine multiple conditions.
 
@@ -146,4 +146,50 @@ What would be the value of `a`, `b` and `c`?
 
 </details>
 
+## Control Flow
+
+Control flow determines the order in which code is executed based on conditions. 
+
+Good programming relies heavily on control flow to make decisions and repeat actions.
+
+Knowing when to use nested `if` statements versus returning early from a function is an important skill to develop.
+
+But we'll cover that in later lessons, its just good to be aware of it now.
+
+Common control flow statements include:
+- `if`, `else if`, `else`
+- `switch`
+- Loops (`for`, `while`)
+
+We will cover loops and switch statements in later lessons.
+
+### If, Else If, Else
+
+The `if` statement allows you to execute code based on a condition.
+
+```typescript
+let score: number // Leaving this unassigned for now;
+let grade: string;
+if (score >= 90) {
+    grade = "A";
+} else if (score >= 80) {
+    grade = "B";
+} else {
+    grade = "C";
+}
+```
+
+What would be the value of `grade` if `score` is `85`?
+
+<details>
+    <summary>Click to reveal answers</summary>
+
+- `grade` would be `"B"` because `score` is greater than or equal to `80` but less than `90`.
+
+</details>
+
+
+Well done on getting through the basics of programming logic!
+
+We will build on these concepts in future lessons.
 
