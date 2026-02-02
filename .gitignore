@@ -8,3 +8,7 @@ dist/
 coverage/
 npm-debug.log*
 AGENTS.md
+.idea/code-course.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/.gitignore
