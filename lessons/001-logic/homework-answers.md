@@ -21,9 +21,9 @@ let scores: number[] = [85, 90, 78];
 8.
 ```ts
 let car: { make: string; model: string; year: number } = {
-  make: "Toyota",
-  model: "Corolla",
-  year: 2020
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020
 };
 ```
 
@@ -54,7 +54,7 @@ let total: number = 10 + 5;
 22.
 ```ts
 if (score >= 90) {
-  grade = "A";
+    grade = "A";
 }
 ```
 
@@ -66,11 +66,11 @@ let score: number = 85;
 let grade: string;
 
 if (score >= 90) {
-  grade = "A";
+    grade = "A";
 } else if (score >= 80) {
-  grade = "B";
+    grade = "B";
 } else {
-  grade = "C";
+    grade = "C";
 }
 ```
 
@@ -81,11 +81,11 @@ let color: string = "red";
 let message: string;
 
 if (color === "red") {
-  message = "Stop";
+    message = "Stop";
 } else if (color === "green") {
-  message = "Go";
+    message = "Go";
 } else {
-  message = "Wait";
+    message = "Wait";
 }
 ```
 26.
@@ -95,11 +95,11 @@ let level: string = "advanced";
 let result: string;
 
 if (score >= 80 && level === "advanced") {
-  result = "Excellent";
+    result = "Excellent";
 } else if (score >= 80 || level === "advanced") {
-  result = "Good";
+    result = "Good";
 } else {
-  result = "Keep Practicing";
+    result = "Keep Practicing";
 }
 ```
 27.
@@ -108,9 +108,9 @@ let score: number = 72;
 let isPass: boolean;
 
 if (score >= 50) {
-  isPass = true;
+    isPass = true;
 } else {
-  isPass = false;
+    isPass = false;
 }
 ```
 28. `Exact`
