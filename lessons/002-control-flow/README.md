@@ -8,7 +8,7 @@ A `for` loop repeats a block of code a specific number of times.
 
 ```mermaid
 flowchart TD
-    A[Initialize counter] --> B{Condition true?}
+    A[Initialise counter] --> B{Condition true?}
     B -- Yes --> C[Run loop body]
     C --> D[Update counter]
     D --> B
@@ -23,7 +23,7 @@ for (let i = 0; i < 5; i++) {
 
 The `for` loop has three parts inside the parentheses:
 
-1. **Initializer**: `let i = 0` — runs once before the loop starts
+1. **Initialiser**: `let i = 0` — runs once before the loop starts
 2. **Condition**: `i < 5` — checked before each iteration; the loop stops when this is `false`
 3. **Update**: `i++` — runs after each iteration
 
@@ -341,6 +341,6 @@ You now have the full set of basic control flow tools:
 - `for` and `while` loops for repetition
 - `do...while` for "run at least once" situations
 - `switch` for choosing between many specific values
-- `break` and `continue` for fine-tuning loop behavior
+- `break` and `continue` for fine-tuning loop behaviour
 
 These building blocks appear in nearly every program you'll write.

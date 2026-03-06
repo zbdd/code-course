@@ -122,7 +122,7 @@ if (color === "red" || "blue" || "yellow") {
 }
 ```
 
-8. Refactor this code to use a single `if / else if / else` chain (no nested `if` statements). Do not change behavior. Then write the final value of `status`.
+8. Refactor this code to use a single `if / else if / else` chain (no nested `if` statements). Do not change behaviour. Then write the final value of `status`.
 
 ```ts
 let batteryPercent: number = 10;
