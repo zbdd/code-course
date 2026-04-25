@@ -4,28 +4,14 @@ Welcome! This repository contains a set of step-by-step TypeScript lessons. Each
 
 ## Where to Start
 
-1. Read the lesson guide in `lesson-001/README.md`.
-2. Run the completed code in `lesson-001/completed/` to see the output.
-3. Continue to `lesson-002/README.md` and `lesson-003/README.md`.
-4. Continue to `lesson-004/README.md`.
-
-## Running a Lesson
-
-Each completed lesson is a small, self-contained Node + TypeScript setup.
-
-```bash
-cd lesson-001/completed
-npm install
-npm start
-```
-
-Repeat the same steps in `lesson-002/completed/`, `lesson-003/completed/`, and `lesson-004/completed/`.
+1. Read the lesson guide in `lessons/001-logic/README.md`.
+2. Continue to `lessons/002-control-flow/README.md`.
+3. Continue to `lessons/003-reinforcement/README.md`.
 
 ## Repository Layout
 
-- `lesson-001/`, `lesson-002/`, `lesson-003/`, `lesson-004/`: Lesson guides (`README.md`).
-- `lesson-001/completed/`, `lesson-002/completed/`, `lesson-003/completed/`, `lesson-004/completed/`: Runnable code for the lesson.
-- `docs/`: Supplemental lesson notes.
+- `lessons/001-logic/`, `lessons/002-control-flow/`, `lessons/003-reinforcement/`: Lesson content (Markdown, examples, and media).
+- `docs/`: Supplemental lesson notes and setup guides.
 
 ## Prerequisites
 
