@@ -7,10 +7,11 @@ Welcome! This repository contains a set of step-by-step TypeScript lessons. Each
 1. Read the lesson guide in `lessons/001-logic/README.md`.
 2. Continue to `lessons/002-control-flow/README.md`.
 3. Continue to `lessons/003-reinforcement/README.md`.
+4. Continue to `lessons/004-functions/README.md`.
 
 ## Repository Layout
 
-- `lessons/001-logic/`, `lessons/002-control-flow/`, `lessons/003-reinforcement/`: Lesson content (Markdown, examples, and media).
+- `lessons/001-logic/`, `lessons/002-control-flow/`, `lessons/003-reinforcement/`, `lessons/004-functions/`: Lesson content (Markdown, examples, and media).
 - `docs/`: Supplemental lesson notes and setup guides.
 
 ## Prerequisites
